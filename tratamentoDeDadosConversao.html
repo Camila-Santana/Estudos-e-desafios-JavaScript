@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Tratamento de dados: Conversão</h2>
+</body>
+
+</html>
+
+<style>
+    body {
+        background: tomato;
+    }
+</style>
+
+<script>
+    var n1 = window.prompt('Digite um número') // o comando prompt só aceita STRING
+        // aí que entra a CONVERSÃO: como eu quero que seja um number, vou precisar
+        //converter de string para number//
+
+    //CONVERSAO de STRING para NUMBER//
+    // o comando que vou digitar na frente do prompt é number.parseInt() pode ser apenas Number()//
+    var n1 = Number.parseInt(window.prompt('Digite um número')) //aqui ele vai converter de string para number//
+    var n2 = Number.parseInt(window.prompt('Digite outro número'))
+        // EXPLICAÇÃO para esse código//
+        // a VARIÁVEL n1 vai RECEBER o que vinher do PROMPT, CONVERTIDO para NUMBER
+        // LEMBRANDO que o PROMPT só aceita STRING//
+        // SE for um NÚMERO REAL, no luar do parseInt vai ser parseFloat//
+
+    //interação do js com usuário//
+    // retornando o resultado ao digitar os números
+    // quero que retorne a SOMA dos númros//
+
+    var n1 = Number(window.prompt('Digite um número'))
+    var n1 = Number(window.prompt('Digite outro número'))
+    window.alert(`A soma dos números é ${n1+n1}`) // somei os resultados concatenando a referência à variável ${``}//
+
+    // pra conversão, pode esrever tbm apenas NUMBER, o JS fica responsável por entender se será REAL ou INTEIRO//
+
+    // CONVERSÃO DE NUMBER PARA STRING//
+    //Existe algumas maneiras: String(n) ou n.ToString()
+    var s = n1 + n2
+    window.alert('A soma dos valores é' + String(s)) // ele vai transformar um numer em string //
+</script>
