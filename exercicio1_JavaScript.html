@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+</head>
+
+<style>
+    body {
+        background: gray;
+        color: azure;
+    }
+</style>
+
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome?') // variável name RECEBE comando prompt//
+        document.write(`Seu nome tem ${nome.length} letras </br>`) // além do ALERT, podemos utilizar o comando DOCUMENT.WRITE (para mostrar na tela)//
+            //SE utilizado o comando document.writeIl - write inline (ele mostrará na próx linha, ou seja, linha de baixo)//
+            // quando utilizarmos o TEMPLATE STRING, ou seja, o símbolo do dólar para referenciar uma string, devemos incrementá-la //
+            // com uso da crase//
+
+        //o comando LENGTH calcula a quantidade/tamanho de letras que está contida no nome que o usuário digitar//
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}</br>`) // O comando toUpperCase - utilizado para colocar o que o usuário
+            // digita em MAIÚSCULO//
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}</br>`) // da mesma maneira, o comando toLowerCase, utilizado para transformar
+            // letras para MINÚSCULA//
+            // lembrando que para os respectivos comandos: upper e lower, é necessário uso dos parênteses para chamá-los a funcionar//
+    </script>
+</body>
+
+</html>
