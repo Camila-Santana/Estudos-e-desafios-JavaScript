@@ -13,3 +13,13 @@ undefined
 //declarei uma variável NUMBER com apenas UMA casa decimal e UM PONTO//
 //transformei essa casa decimal em DUAS CASAS DECIMAIS//
 //transformei UM PONTO em VÍRGULA//
+
+
+
+> num.toLocaleString('pt-BR', {style: 'currency' , currency: 'BRL'})
+'R$ 1.545,50'
+> num.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+'US$ 1.545,50'
+
+// Aqui, transformei o number em salário em moeda real brasileira
+// como também em dólar americano//                                                                                                                              
